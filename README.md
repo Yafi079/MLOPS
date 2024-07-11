@@ -1,0 +1,14 @@
+# Submission 1: Machine Learning Pipeline - Tutor Detection Students Performance Dataset
+Nama: Muhammad Yafi
+
+Username dicoding: muhammad_yafi_079    
+
+| | Deskripsi |
+| ----------- | ----------- |
+| Dataset | [Tutor Detection from Students Performance Dataset](https://www.kaggle.com/datasets/rabieelkharoua/students-performance-dataset) |
+| Masalah | Prestasi akademik siswa menjadi perhatian utama dalam sistem pendidikan. Salah satu faktor yang dianggap mempengaruhi prestasi akademik adalah keikutsertaan siswa dalam program tutoring. Penelitian menunjukkan bahwa tutoring dapat memberikan dampak positif terhadap GPA (Grade Point Average) siswa. Namun, tidak semua siswa yang memiliki GPA rendah ikut dalam program tutoring. Oleh karena itu, prediksi apakah seorang siswa akan mengikuti tutoring atau tidak berdasarkan GPA yang didapatkan sangat penting. Dengan prediksi ini, sekolah dapat mengidentifikasi siswa yang membutuhkan bantuan tambahan lebih awal dan mengarahkan mereka ke program tutoring yang sesuai. |
+| Solusi machine learning | Dengan menemukan pola dalam data GPA dan keikutsertaan tutoring, model machine learning dapat membantu menyelesaikan masalah yang diangkat. Pola-pola ini dapat mencakup GPA tertentu yang sering muncul pada siswa yang mengikuti tutoring, atau korelasi antara GPA dengan keikutsertaan dalam program tutoring. Model klasifikasi dapat memproses data baru dengan mengklasifikasikannya sebagai positif, yang berarti siswa mengikuti tutoring, atau negatif, yang berarti siswa tidak mengikuti tutoring. Ini akan membantu sekolah dalam mengidentifikasi siswa yang membutuhkan bantuan tambahan melalui program tutoring berdasarkan data GPA mereka. |
+| Metode pengolahan | Dataset awal memiliki beberapa kolom, tetapi hanya fitur "GPA" dan label "Tutoring" yang relevan untuk proyek ini. Kolom-kolom lainnya akan dihapus. Setelah itu, dataset akan dibagi menjadi data training dan evaluasi dengan perbandingan 80% untuk training dan 20% untuk evaluasi. Selain itu, fitur "GPA" akan diubah menjadi format yang konsisten, dan label "Tutoring" akan diubah menjadi nilai integer. |
+| Arsitektur model | Model yang digunakan dalam arsitektur ini mencakup lapisan Embedding, LSTM Bidirectional, lapisan Fully Connected, dan lapisan Output dengan aktivasi sigmoid. Optimizer yang dipilih adalah Adam dengan fungsi loss BinaryCrossentropy. |
+| Metrik evaluasi | Metrik evaluasi yang diterapkan mencakup ExampleCount, AUC, FalsePositives, TruePositives, FalseNegatives, TrueNegatives, serta BinaryAccuracy. |
+| Performa model | Berdasarkan nilai metrik yang diperoleh dari Evaluator, didapatkan performa model dengan nilai loss: 0.6010, binary_accuracy: 0.7068, val_loss: 0.6219, dan val_binary_accuracy: 0.6680. Hasil tersebut menunjukkan bahwa kinerja model ini sudah cukup baik dalam memprediksi apakah seorang siswa akan mengikuti tutoring atau tidak berdasarkan GPA mereka. |
